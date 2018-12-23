@@ -1,0 +1,83 @@
+<script>
+// https://adventofcode.com/2018/day/2 
+
+// var inputs = ["abcde", "fghij", "klmno", "pqrst", "fguij", "axcye", "wvxyz"];
+
+var inputs = ["ohvflkatysoimjxbunazgwcdpr", "ohoflkctysmiqjxbufezgwcdpr", "ohvflkatysciqwxfunezgwcdpr", "fhvflyatysmiqjxbunazgwcdpr", "ohvhlkatysmiqjxbunhzgwcdxr", "ohvflbatykmiqjxbunezgscdpr", "ohvflkatasaiqjxbbnezgwcdpr", "ohvflkatyymiqjxrunetgwcdpr", "ohvflkatbsmiqhxbunezgwcdpw", "oheflkytysmiqjxbuntzgwcdpr", "ohvflkatrsmiqjibunezgwcupr", "ohvflkaiysmiqjxbunkzgwkdpr", "ohvilkutysmiqjxbuoezgwcdpr", "phvflkatysmkqjxbulezgwcdpr", "ohvflkatnsmiqjxbznezgpcdpr", "ohvylkatysriqjobunezgwcdpr", "ohvflkatytmiqjxbunezrwcypr", "ohvonkatysmiqjxbunezgwxdpr", "ohvflkatgsmoqjxyunezgwcdpr", "ohvflkbtqsmicjxbunezgwcdpr", "ohvflkatysmgqjqbunezgwcdvr", "ohvtlkatyrmiqjxbunezgwcdpi", "ohvflkatyskovjxbunezgwcdpr", "ohvflkayysmipjxbunezgwcdpu", "ohvalkltysmiqjxbunezgecdpr", "ohvflkatysmiqjxiunezgnndpr", "ohvflkatyomiqjxbbnezgwcdpp", "ohvflkatysmiqjxbuoezgncdpy", "omvflkvtysmiqjxwunezgwcdpr", "ohvflkatynmicjxbunezgwpdpr", "ohvflkatyqmaqjxbunezvwcdpr", "ohbfhkatysmiqjxbunezgwcdqr", "ohvflkatesmiqjvbunezpwcdpr", "ohvflkatysmsqjxiunezgwcdhr", "ohvfjkatysmwqjxbunezgwcddr", "ohvflkanysmiqjxbunwkgwcdpr", "ohqflkatysmiqjxbuuezgwcddr", "ohvflkatysmvqjxbznlzgwcdpr", "ohvflkatysmiqjxbunjzwwqdpr", "ohvfjkatysmiqxxbunezgwcupr", "chvfxkatysmiqjxxunezgwcdpr", "uhvflkatitmiqjxbunezgwcdpr", "ohvflbatysmiqjxbuntzgwcdor", "ohvflkmtysmmqjxbunexgwcdpr", "ohvflsatysmyqjxjunezgwcdpr", "ohvfskatysmiqjjbunezgwcdpg", "ohvflkatysniqjxbunexgwcrpr", "ohvfekatysmiqjxbunedswcdpr", "ohvfltatysmjqjxbunezghcdpr", "ohvflkatydmiqjxvunezggcdpr", "oavflkatysmiqjxtunazgwcdpr", "ohvflkltysmiqjxbuzeugwcdpr", "ohbflkatysmiqjybuuezgwcdpr", "ehvfzkatysmiqjxbuhezgwcdpr", "odvflkatssmiqjxbunezgwcdpj", "ohvflkatysmiqjzbufezgwbdpr", "jhvflkdtysmiqqxbunezgwcdpr", "ohvflkatysmiqjwbunengwcnpr", "ohvfskatysmiqjxbxuezgwcdpr", "ohvflkatysmiqjobvnezgwcrpr", "ohvrlkatysmiqjxbwnezgrcdpr", "ofvflkatysmiqjxbunezpwcdwr", "ohvfxdatyomiqjxbunezgwcdpr", "yhvflkatydmiqjxbubezgwcdpr", "ohvflkatysdiqjxbuneztwcspr", "ohvflkatydmiquxbunezgwcbpr", "ohvflkatysmiqcxbukezgwcdwr", "ohvflkntasmiqjxbunezghcdpr", "lhvflkatysmiqjxbunezqwckpr", "ehifikatysmiqjxbunezgwcdpr", "ohvflkatysmiqjcbutezgwcdpm", "ohvflkatjssiqrxbunezgwcdpr", "oyvflkavysmiqjxlunezgwcdpr", "orvflkgtysmiqjxbukezgwcdpr", "ihvflkatysmiqaxbunpzgwcdpr", "ohvflkatusmiqjxbbnezgwchpr", "ohvflkatysbiqjxvuneugwcdpr", "ohvflkatysmiqjcbungzgwcwpr", "ovvflkatysmidjxbunezgscdpr", "ohvflqatysmiljxbunfzgwcdpr", "ghvfokatysmiqjxbunqzgwcdpr", "nxvflkatysmxqjxbunezgwcdpr", "ohvflkatysmiqjxbexezgwrdpr", "ohvfrkatysmhqjxbuntzgwcdpr", "ohvflkvtysmiqjxocnezgwcdpr", "ohvglkgtysmiqjxnunezgwcdpr", "ohvflkatysmnqjxbunecgwqdpr", "oyvflkatysgiqjxbcnezgwcdpr", "ofvflkatysmiqjxbunfzgwcdpg", "otvflkttysmiqjxbunezgwmdpr", "ohvflkvtysmiqjbbunezgzcdpr", "ahvflkatysyiqjxbunezvwcdpr", "ohiflkatysmydjxbunezgwcdpr", "ohvfwkatysmvqjxbunezwwcdpr", "ohvflkatysbiqjxbunergwodpr", "hhvsdkatysmiqjxbunezgwcdpr", "ihvflkwtysmiqjxbunezgacdpr", "ohvfljatysmiqcxbunuzgwcdpr", "ohvflkatysqiqlwbunezgwcdpr", "ohvflkauysmkqjxwunezgwcdpr", "ohvflkatysmoqjqbunezgwodpr", "ohvslkvtysmipjxbunezgwcdpr", "olvflkatysmiujxbunezgwctpr", "osvflxatysmiqjxbenezgwcdpr", "orvflkhtysmiqjxbinezgwcdpr", "ohcflkatystiqjxbunezbwcdpr", "ohcflkatyfmifjxbunezgwcdpr", "ohvflkatdsmiqjxbrnezgwcdpt", "ohvflkatysmiqjxbwnqzawcdpr", "oevflkakysmiqjxbunezgwcdpt", "ofvflkatysmiqjxbunbqgwcdpr", "ohvflkatysmdqjxbunefqwcdpr", "ohvklkalysmiqjxbunezgwcepr", "ocvflhatysmiqjxbunezzwcdpr", "uhvflkatysmiqmxbunezgwcxpr", "ohvflkatyshikjhbunezgwcdpr", "lbvflkatysmoqjxbunezgwcdpr", "ohvflkatssmuqjxbunezgscdpr", "ohvflkatysmifyxbuvezgwcdpr", "ohvfikatysmiqjxbunezgwfupr", "ohvmlkaiysmiqjxqunezgwcdpr", "ohvflkatysmiqjxiunpzgwcdpo", "lhvflkatysmpqjxbenezgwcdpr", "ohvflkatysmiqjobunengwczpr", "ohoflkatysniqjxbunezgccdpr", "ohvfxkatysmiqjgbunyzgwcdpr", "ohvflkytysmiljxbubezgwcdpr", "hhvsdkatysmiqjxjunezgwcdpr", "ohvflkatysmiqjtuunezgwcdpt", "ohvfdkxtysmiqjubunezgwcdpr", "ohxflkatysmiyjxbunezgwcdhr", "ohvflkatysmiqjibunezgwcppd", "ohvflkatysmihjxbunezgwcdhj", "ohvflkatysmiqjxronezgwcdvr", "ofrflxatysmiqjxbunezgwcdpr", "ohvwlkatysmiqjxounezgscdpr", "ohvflkatcodiqjxbunezgwcdpr", "oqvflkatysmiqjxbunebgwmdpr", "ohvflmatysmisjxbunezqwcdpr", "ovvflkatysmiqjxbuxezgwcdpe", "ohvflkatysmdejxbuneztwcdpr", "hhvflkathsmiqjxbwnezgwcdpr", "ohkflkatlsmsqjxbunezgwcdpr", "ohvflkktysmizjxhunezgwcdpr", "ohzflkatysmiqjrbunezgwcdpj", "ohuflwatysmiqjxbunezgwcdgr", "ohvflkatysmiqvxmunpzgwcdpr", "xhvflkwtysmiqjxbunezgwjdpr", "whvflkatysmiqjxbunezgzcopr", "ohvflkayysmiqjxuznezgwcdpr", "khvflkasysmiqjxbunezgwcdpv", "ohvflkatylmiqjxbpnozgwcdpr", "ohvflkgtysziqjxbunezgwgdpr", "ohvfljaiysmiqjxbuvezgwcdpr", "ohvflkxtyslizjxbunezgwcdpr", "ohzflkatysmiqjxbcnezgwcdar", "ohvflkatysmiqjxbisecgwcdpr", "shvflkatyjmiqjkbunezgwcdpr", "mhvflkatysmiqjxvunezgwcdpk", "ohfflkatysmiqjxbunczgwcppr", "ohvflkatysmiqjkzunezgwcdpc", "ohvflkatysmifjxbuneygwctpr", "ohvflkatysmimjbbunezgwcdpe", "ohvflkatjsciqjxbunezgwcdpa", "ohvxlkatysmitjxbunezswcdpr", "ohvslkatfsmiqjxbunezgwudpr", "ohvflkatysmiqexbugezgwcdnr", "onvflkatysmiqjxkunezgtcdpr", "fhsflkalysmiqjxbunezgwcdpr", "oyvflkatysmiqjobxnezgwcdpr", "ohvflkatysmiqjxbunezswgdvr", "phvflkatyymiqjxvunezgwcdpr", "oivflzutysmiqjxbunezgwcdpr", "ohvflkftysmiqjxbunezkwcopr", "ohvflkatysmwnjxbunezgwcdpp", "ohvflkatysmiqkxcunezgwndpr", "phvklkatysmiqjhbunezgwcdpr", "ohvflrawysmiqjxbunhzgwcdpr", "ohvflkatysmiqjxbunecgwcdig", "ohvflpakysmiqjxbunezgwrdpr", "odvflkatykmiqjxbunezglcdpr", "ohtflkatysiiqjxblnezgwcdpr", "lhvfpkatysmiqjxbupezgwcdpr", "ohvflkatdsmiqjpbunezgwcdps", "ohvflkztysmiqjxvunezgwjdpr", "ohvflbatysmxqoxbunezgwcdpr", "ohvklkaigsmiqjxbunezgwcdpr", "ohvfgkawysmiqjxbunezgwcdur", "ohvflkatyskpqjlbunezgwcdpr", "ohvflkatyqmiqjhbupezgwcdpr", "ohqflkatysmiqjxzonezgwcdpr", "ohxfnkatyymiqjxbunezgwcdpr", "ohmflkatpsmiqjxbunezgwcdpw", "ohvflkatysmiqjibnnewgwcdpr", "vevflkatysmiqjxbunezgwcypr", "ohvflkatydmiqwxbungzgwcdpr", "ohsrlkatysmiqjxbcnezgwcdpr", "ohvflkptyvmiqexbunezgwcdpr", "opzflkatysmiqjxrunezgwcdpr", "ohvflkitysmiqjxcunezgwcmpr", "ohvflkatysmhhjxblnezgwcdpr", "ohvflkatysfiqjxbunrzgwmdpr", "ohvflkatyamibjxbunezgwcdpf", "ohvflkalysmigjxbunezggcdpr", "ohvflkatwsmisjxbunezgdcdpr", "dhvflkatysmlqjxbunszgwcdpr", "ohvflkatysmiqjxbueeygwcbpr", "ohvflkatgsmiqjnbunezhwcdpr", "svvflkatysmiqjxbunezgwckpr", "opvflkatysmiqpxbufezgwcdpr", "ohnvlkatysmiqjxbunezglcdpr", "phvflkutysjiqjxbunezgwcdpr", "ohvflabtysmiqjjbunezgwcdpr", "ouvflkatysmiqjsbunezgwcdpk", "osvflkatysmijjxbunezgwcypr", "owvflkatysmiqjxbukxzgwcdpr", "ohvfliatvsmiljxbunezgwcdpr", "ohvflkatysmiqjxbumezbwtdpr", "ohvflkatyfcicjxbunezgwcdpr", "ohvflkatysmiqldbunezgfcdpr", "oqvflkatysmiqixkunezgwcdpr", "ohvflkatysmiqjxbulezgicdpe", "ohvflkatysmiqjxbuniegwcdpl", "ohvflkatysmiqjwbunbzgwcdhr", "ohvflkatysmiqjdbunezgwwdkr", "ohqflkytysmiqjxbunezgwcdpc", "ohvflkatysmigjxbunezqwwdpr", "ohvfloatysmiqjpbumezgwcdpr", "ohvklkathkmiqjxbunezgwcdpr", "ohvflkstjsmiqjxbunezgwctpr", "ohvvlkatysmiqjxbunewgwcdir", "ohnflkatysmiqjxbunszgwcdlr", "ohvflkatysmnqjxbunezgxcdlr", "ohvfrkatysmiqjxbonezgwcdor", "ihvflkatysmiqjxbuneogwcxpr", "ohvflkatysmiqjxbunecgwcccr", "owvflkatysmivjxbunezgwjdpr", "ohvflkgtysmiqjxbunczhwcdpr", "ohyqlkatysmiqjxbunezgwcypr", "ohvflkatysmiqjvbunezuwcdpw", "ohvflkathsmiqmxbuoezgwcdpr", "ehvjlkajysmiqjxbunezgwcdpr", "ohvflkltysmiqjxblnezgwjdpr", "oovflkvtfsmiqjxbunezgwcdpr", "olvfzkatysmiqjxyunezgwcdpr", "ohvflkatysqitjxbunezgncdpr", "yhvflkatysmkqjxbunazgwcdpr", "zlvolkatysmiqjxbunezgwcdpr", "ohvflpatysmiqjxbunezgwcapb", "ohvflkatysmuqjxbunezgfcdur"];
+
+function checkSimlilar(check1, check2) {
+
+	let samsies = 0;
+
+	for (j = 0; j < check1.length; j++) {
+
+		if (check1[j] != check2[j]) {
+
+			document.write(check2[j]);
+
+		} else {
+
+			document.write("<span>" + check2[j] + "</span>");
+			samsies++;
+		};
+
+	};
+
+
+	if (samsies == (check1.length - 1)) {
+
+		document.write(" BINGO!"); // then in browser search for "BINGO", I am aware that is horrible (>_<)
+
+	};
+
+};
+
+
+for (i = 0; i < inputs.length; i++) {
+
+	document.write("<h1>" + inputs[i] + "</h1>");
+
+
+	for (h = 0; h < inputs.length; h++) {
+
+		if (h != i) {
+
+			checkSimlilar(inputs[i], inputs[h]);
+			document.write(" <br> ");
+
+		};
+
+	};
+
+	document.write(" <hr> ");
+
+};
+</script>
+<style>
+body {
+	background: black;
+	color: limegreen;
+	margin: 20px;
+	font-family: courier;
+}
+
+.result {
+	border: 1px dashed green;
+	padding: 20px;
+	margin: 20px auto;
+	position:
+}
+
+hr {
+	border: 0;
+	outline: 0;
+	padding: 0;
+	margin: 20px auto;
+	background: green;
+	height: 1px;
+}
+
+span {
+	color: red;
+}
+</style>
